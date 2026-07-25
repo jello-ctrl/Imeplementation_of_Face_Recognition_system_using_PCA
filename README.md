@@ -30,36 +30,12 @@ The system:
 
 ---
 
-##  Project Structure
-
-```
-FaceRecognitionPCA/
-│
-├── Main.m
-├── CreateDatabase.m
-├── EigenfaceCore.m
-├── Recognition.m
-├── README.md
-│
-├── TrainDatabase/
-│   ├── 1.jpg
-│   ├── 2.jpg
-│   └── ...
-│
-└── TestDatabase/
-    ├── 1.jpg
-    ├── 2.jpg
-    └── ...
-```
-
----
 
 ##  Requirements
 
-- MATLAB R2020a or later
+- MATLAB R2026a
 - Image Processing Toolbox
 
----
 
 ##  How It Works
 
@@ -88,9 +64,8 @@ FaceRecognitionPCA/
 - Compute the Euclidean distance between the test image and every projected training image.
 - Select the closest match.
 
----
 
-## 📊 Algorithm
+##  Algorithm
 
 1. Read training images.
 2. Convert images to vectors.
@@ -104,26 +79,7 @@ FaceRecognitionPCA/
 10. Compare feature vectors using Euclidean distance.
 11. Display the closest matching face.
 
----
 
-##  Running the Project
-
-1. Clone this repository.
-2. Open the project folder in MATLAB.
-3. Ensure the folder structure is:
-
-   ```
-   TrainDatabase/
-   TestDatabase/
-   ```
-
-4. Run:
-
-   ```matlab
-   Main
-   ```
-
----
 
 ##  Example Output
 
